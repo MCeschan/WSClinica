@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WSClinica.Data;
 
 namespace WSClinica.Migrations
 {
     [DbContext(typeof(DbClinicaContext))]
-    partial class DbClinicaContextModelSnapshot : ModelSnapshot
+    [Migration("20230120191254_cambio2")]
+    partial class cambio2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
