@@ -9,7 +9,7 @@ namespace WSClinica.Models
         public int Id { get; set; }
 
         [Range(1,100)]
-        //[RegularExpression("AAA000")]  // [0-9]{3}
+        [RegularExpression(@"[A-Z]{3}[0-9]{3}")]
         public int Numero { get; set; }
 
         [Required]
