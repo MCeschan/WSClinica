@@ -7,8 +7,11 @@ namespace WSClinica.Models
     public class Habitacion
     {
         public int Id { get; set; }
+
         [Range(1,100)]
+        //[RegularExpression("AAA000")]  // [0-9]{3}
         public int Numero { get; set; }
+
         [Required]
         [Column(TypeName = "varchar(50)")]
         public string Estado { get; set;}
