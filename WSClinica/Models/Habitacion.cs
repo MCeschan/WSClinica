@@ -8,9 +8,8 @@ namespace WSClinica.Models
     {
         public int Id { get; set; }
 
-        [Range(1,100)]
         [RegularExpression(@"[A-Z]{3}[0-9]{3}")]
-        public int Numero { get; set; }
+        public string Numero { get; set; }
 
         [Required]
         [Column(TypeName = "varchar(50)")]
